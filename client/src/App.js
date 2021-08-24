@@ -1,15 +1,14 @@
-import './App.css';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 
-import LandingPage from './components/views/LandingPage/LandingPage';
+import LandingPage from './components/views/LandingPage/LandingPage'
 import LoginPage from './components/views/LoginPage/LoginPage';
 import RegisterPage from './components/views/RegisterPage/RegisterPage';
 import Auth from './hoc/auth'
-
 
 function App() {
   return (
@@ -28,11 +27,8 @@ function App() {
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
         </Switch>
       </div>
-    </Router >
+    </Router>
   );
 }
 
 export default App;
-
-
-

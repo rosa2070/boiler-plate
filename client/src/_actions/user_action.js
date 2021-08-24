@@ -3,7 +3,6 @@ import {
     LOGIN_USER,
     REGISTER_USER,
     AUTH_USER
-
 } from './types';
 export function loginUser(dataToSubmit) {
 
@@ -26,6 +25,8 @@ export function registerUser(dataToSubmit) {
         payload: request
     }
 }
+
+
 
 export function auth() {
 
